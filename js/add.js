@@ -1,3 +1,5 @@
+
+
 var listModule = {
 	add : function () {
 	    var content = document.getElementById("list_type"),

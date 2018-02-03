@@ -1,11 +1,12 @@
 body,html{
-	background: #f2f4f7;
-	margin: 0;
+  margin: 0;
 	padding: 0;
 	height: 100%;
+	background: #f2f4f7;
 }
 .list_wrap {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14,27 +15,39 @@ body,html{
   width: 320px;
   background: #f4f4f4;
 }
+@media screen and (max-width:590px) {
+  .list_wrap {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
 .list_top {
   background: #537791;
 }
 #list_type {
   box-sizing: border-box;
   font-size: 1.25em;
-  padding: 16px;
-  margin-right: 27px;
+  padding: 15px;
   border: none;
   outline: none;
   color: #fff;
   background: #537791;
 }
 .list_top button {
-  background: #393232;
-  color: #fff;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding-top:14px;
+  padding-bottom: 16px;
+  padding-right: 14px;
+  padding-left: 14px;
   box-sizing: border-box;
   font-size: 1.25em;
-  padding: 14px;
   border: none;
-  margin: 0;
+  background: #393232;
+  color: #fff;
 }
 ul {
   list-style: none;
@@ -57,14 +70,14 @@ li button {
   position: absolute;
   right: 0;
   font-size: 1em;
-  border:none;
+  border: none;
   color: #c1c0b9;
 }
 li button:hover {
   opacity: 0.5;
 }
 .list_finished {
-  color:#90a4ae;
+  color: #90a4ae;
 }
 .list_finished span{
   font-size: 1.5em;
