@@ -15,13 +15,6 @@ body,html{
   width: 320px;
   background: #f4f4f4;
 }
-@media screen and (max-width:590px) {
-  .list_wrap {
-  margin-top: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
 #list_switch_red {
   font-size: 1.5em;
   border: none;
@@ -114,4 +107,15 @@ li button:hover {
 }
 .list_top_a button {
   background: #f54d42;
+}
+
+@media screen and (max-width:590px) {
+  .list_wrap {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  li button {
+  opacity: 1;
+}
 }
