@@ -22,7 +22,26 @@ body,html{
   margin-right: auto;
 }
 }
-
+#list_switch_red {
+  font-size: 1.5em;
+  border: none;
+  background: #ecfeff;
+  border-color: #ecfeff;
+  color: #323232;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+#list_switch_blue {
+  font-size: 1.5em;
+  border: none;
+  background: #ecfeff;
+  border-color: #ecfeff;
+  color: #323232;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
 .list_top {
   background: #537791;
 }
@@ -48,6 +67,7 @@ body,html{
   border: none;
   background: #393232;
   color: #fff;
+  cursor: pointer;
 }
 ul {
   list-style: none;
@@ -62,6 +82,7 @@ li {
 .task_finished {
   text-decoration: line-through;
 }
+
 li input {
   margin-left: 10px;
   margin-right: 10px;
@@ -72,13 +93,25 @@ li button {
   font-size: 1em;
   border: none;
   color: #c1c0b9;
+  opacity: 0;
 }
 li button:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 .list_finished {
   color: #90a4ae;
 }
 .list_finished span{
   font-size: 1.5em;
+}
+
+
+.list_top_a {
+  background: #f8f398;
+}
+.list_top_a #list_type {
+  background: #f8f398;
+}
+.list_top_a button {
+  background: #f54d42;
 }
