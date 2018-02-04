@@ -12,7 +12,7 @@ define(function(){
 	    	    this.dele(element1);	
 	    	    var li = element1.parentNode;
 	    	    area.appendChild(li);
-	            li.class = "task_finished";
+	            li.className = "task_finished";
 	        }
 	    }
     }
