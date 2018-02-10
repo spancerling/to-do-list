@@ -11,17 +11,17 @@
     <div id="vue-todolist">
       <button type="button" id="list_switch_red" v-on:click="change">+</button>
       <div class="list_top" v-bind:class="{list_top_a:isActive}">
-        <input v-on:keyup.enter="add" class="list_type" type="text" v-model="inputValue">
-        <button type="button" v-on:click="add">+</button>
-      </div>
-      <ul>
-        <li v-for="(item,index) in items" v-bind:key="item.id" v-bind:class="{task_finished:item.isfinished}">
+    <input v-on:keyup.enter="add" class="list_type" type="text" v-model="inputValue">
+    <button type="button" v-on:click="add">+</button>
+    </div>
+    <ul>
+      <li v-for="(item,index) in items" v-bind:key="item.id" v-bind:class="{task_finished:item.isfinished}">
           <input type="checkbox" v-model="item.isfinished">
            {{item.text}}
           <button type="button" v-on:click="items.splice(index, 1)">DEL</button>
-        </li>
-      </ul>
-    </div>
+      </li>
+    </ul>
+  </div>
   </div>
 <script src="add.js"></script>
 </body>

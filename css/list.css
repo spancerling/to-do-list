@@ -5,11 +5,11 @@ body,html{
 	background: #f2f4f7;
 }
 .list_wrap {
-  margin-left: auto;
-  margin-right: auto;
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-left: auto;
+  margin-right: auto;
   transform: translate(-50%,-50%);
   height: 480px;
   width: 320px;
@@ -26,22 +26,34 @@ body,html{
   cursor: pointer;
 }
 #list_switch_blue {
+  height: 40px;
+  width: 40px;
   font-size: 1.5em;
   border: none;
   background: #ecfeff;
   border-color: #ecfeff;
   color: #323232;
+  cursor: pointer;
+}
+#list_clear{
+  position: absolute;
+  right: 0;
   height: 40px;
-  width: 40px;
+  width: 100px;
+  font-size: 1.5em;
+  border: none;
+  background: none;
+  border-color: #669b7c;
+  color: #323232;
   cursor: pointer;
 }
 .list_top {
   background: #537791;
 }
 #list_type {
+  padding: 15px;
   box-sizing: border-box;
   font-size: 1.25em;
-  padding: 15px;
   border: none;
   outline: none;
   color: #fff;

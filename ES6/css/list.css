@@ -1,10 +1,10 @@
-body,html { 
+body,html{
   margin: 0;
 	padding: 0;
 	height: 100%;
 	background: #f2f4f7;
 }
-.list_wrap {
+.list_wrap { 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,9 +52,9 @@ body,html {
 }
 #list_type {
   box-sizing: border-box;
+  font-size: 1.25em;
   padding: 15px;
   border: none;
-  font-size: 1.25em;
   outline: none;
   color: #fff;
   background: #537791;
