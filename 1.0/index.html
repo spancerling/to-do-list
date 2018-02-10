@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<title>mytodolist</title>
+	<link rel="stylesheet"  href="css/list.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="list_wrap">
+    <button type="button" id="list_switch_red">+</button>
+    <button type="button" id="list_switch_blue">-</button>
+    <div class="list_top" id="list_top">
+      <input id="list_type"/>
+      <button type="list_button" id="add">+</button>
+    </div>
+    <div class="list_todo">
+      <ul id="list_tasks">
+      </ul>
+    </div>
+    <div class="list_finished">
+    <span>已完成的to do list</span>
+    <ul id="list_finished">
+    </ul>
+    </div>
+  </div>
+<script src="js/sea.js" id="seajsnode"></script>
+<script>
+seajs.use(["ListModule.js"],function(w){
+    document.getElementById("add").onclick = function(){
+        w.add();
+    }
+    document.getElementById("list_type").onkeydown = function(event){
+        if(event.keyCode == 13){
+            w.add();
+        }
+    }
+    document.getElementById("list_switch_red").onclick = function(){
+        w.switchStyle("list_top","list_top_a");
+    }
+    document.getElementById("list_switch_blue").onclick = function(){
+        w.removeStyle("list_top","list_top_a");
+    }
+})
+
+</script>
+</body>
+</html>
